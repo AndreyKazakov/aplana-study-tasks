@@ -9,8 +9,8 @@
         <module name="aplana-study-tasks" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="aplana-study-tasks" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="aplana-study-tasks" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

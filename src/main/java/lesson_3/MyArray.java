@@ -25,6 +25,7 @@ public class MyArray {
         for (int i = 0; i < arraySize; i++) {
             myArray[i] = scanner.next().trim();
         }
+        scanner.close();
         return myArray;
     }
 

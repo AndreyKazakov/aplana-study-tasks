@@ -27,5 +27,6 @@ public class MainProgram {
             default:
                 System.out.println("Not available selection");
         }
+        scanner.close();
     }
 }

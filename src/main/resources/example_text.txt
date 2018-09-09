@@ -1,2 +1,6 @@
-The root interface in the collection hierarchy. A collection represents a group of objects, known as its elements. Some collections allow duplicate elements and others do not. Some are ordered and others unordered. The JDK does not provide any direct implementations of this interface: it provides implementations of more specific subinterfaces like Set and List. This interface is typically used to pass collections around and manipulate them where maximum generality is desired.
-Bags or multisets (unordered collections that may contain duplicate elements) should implement this interface directly.
+Note that the ordering maintained by a tree map, like any sorted map, and whether or not an explicit comparator is provided,
+must be consistent with equals if this sorted map is to correctly implement the Map interface.
+(See Comparable or Comparator for a precise definition of consistent with equals.)
+This is so because the Map interface is defined in terms of the equals operation, but a sorted map performs all key comparisons using its compareTo (or compare) method,
+so two keys that are deemed equal by this method are, from the standpoint of the sorted map, equal.
+The behavior of a sorted map is well-defined even if its ordering is inconsistent with equals; it just fails to obey the general contract of the Map interface.
